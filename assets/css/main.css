@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+:root {
+    --main-color-1: rgb(10, 4, 60);
+    --main-color-2: rgb(3, 80, 111);
+    --main-color-3: rgb(187, 187, 187);
+    --main-color-4: rgb(253, 215, 200);
+    --main-color-title: rgb(255,255,255);
+    --main-font-title: 'Mochiy Pop One', sans-serif;
+    --main-font: 'Indie Flower', cursive;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka One", cursive;
+}
+
+body {
+  background-image: url("../img/fondo.avif");
+  background-size: cover;
+}
+
+header {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 30px 0 0;
+  color: rgb(204, 13, 163);
+  font-size: 36px;
+}
+
+.subtitulo {
+  padding: 10px;
+  color: rgb(173, 14, 147);
+  font-size: 28px;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  color: rgb(173, 14, 147);
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px pink;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.tarjeta-de-mokepon:hover {
+  cursor: pointer;
+  border: solid 5px pink;
+}
+
+.tarjeta-de-mokepon img {
+  width: 150px;
+  border-radius: 50px;
+  padding-top: 10px;
+}
+
+#boton-mascota {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid pink;
+  color: rgb(173, 14, 147);
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+input {
+  display: none;
+}
+
+input:checked+label {
+    background-color: var(--main-color-3);
+    color: var(--main-color-2);
+    box-shadow: 1px1px10px var(--main-color-1);
+}
+
+#seleccionar-ataque {
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.boton-ataque {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid pink;
+  color: rgb(173, 14, 147);
+  font-size: 18px;
+}
+
+#mensajes{
+    width: 280px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-reiniciar{
+    width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid pink;
+  color: rgb(173, 14, 147);
+  font-size: 18px;
+}
+
+.ataques{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  text-align: center;
+}
